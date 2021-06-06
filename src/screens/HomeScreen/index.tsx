@@ -1,10 +1,14 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Image} from 'react-native';
+import styles from './styles';
+import image from '../../../assets/images/Saly-1.png';
 
-const HomeScreen = (props) => {
+const HomeScreen = () => {
     return (
-        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-            <Text>HomeScreen Component</Text>
+        <View style={styles.root}>
+            <Image style={styles.image} source={image} />
+            <Text style={styles.title}>Welcome to TCrypto</Text>
+            <Text style={styles.subtitle}>Invest your virtual 100.000$ and compete with others</Text>
         </View>
     );
 };
