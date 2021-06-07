@@ -1,9 +1,10 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './styles';
-import image from '../../../assets/images/Saly-10.png';
 import { FlatList } from 'react-native-gesture-handler';
 import PortofolioCoin from '../../components/PortfolioCoin';
+
+const image =  require('../../../assets/images/Saly-10.png');
 
 const portofolioCoins = [{
     id: '1',
