@@ -34,7 +34,7 @@ const UserRankingItem = (props: UserRankingItemProps) => {
                 </View>
             </View>
             <View style={{alignItems: 'flex-end'}}>
-                <Text style={styles.name}>€{netWorth}</Text>
+                <Text style={styles.value}>€{netWorth}</Text>
             </View>
         </View>
     );
