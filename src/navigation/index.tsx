@@ -15,6 +15,7 @@ import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../../types';
 import BottomTabNavigator from './BottomTabNavigator';
 import LinkingConfiguration from './LinkingConfiguration';
+import WelcomeScreen from "../screens/WelcomeScreen";
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
   return (
@@ -33,6 +34,13 @@ const Stack = createStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
+      <Stack.Screen 
+        name="Welcome" 
+        component={WelcomeScreen}
+        options={{ 
+          headerShown: false 
+        }} 
+      />
       <Stack.Screen 
         name="Root" 
         component={BottomTabNavigator}
