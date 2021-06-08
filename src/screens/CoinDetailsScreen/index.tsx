@@ -4,6 +4,7 @@ import { AntDesign } from "@expo/vector-icons";
 import styles from "./styles";
 import PercentageChange from "../../components/PercentageChange";
 import CoinPriceGraph from "../../components/CoinPriceGraph";
+import {useNavigation, useRoute} from "@react-navigation/native";
 
 const historyString = JSON.stringify([
     1780.0268450491153,
@@ -189,12 +190,14 @@ const CointDetailsScreen = () => {
         amount: 2,
     })
 
+    const navigation = useNavigation();
+
     const onBuy = () => {
-        // navigation.navigate('CoinExchange', { isBuy: true, coin, portfolioCoin });
+        navigation.navigate('CoinExchange', { isBuy: true, coin, portfolioCoin });
       }
     
       const onSell = () => {
-        // navigation.navigate('CoinExchange', { isBuy: false, coin, portfolioCoin });
+        navigation.navigate('CoinExchange', { isBuy: false, coin, portfolioCoin });
       }
 
     return (
