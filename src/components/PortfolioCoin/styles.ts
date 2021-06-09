@@ -21,14 +21,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 5,
   },
+  symbol: {
+    color: '#6b6b6b',
+  },
   value: {
     fontSize: 18,
     fontWeight: '600',
     marginBottom: 5,
   },
-  symbol: {
-    color: '#6b6b6b'
-  }
 });
 
 export default styles;

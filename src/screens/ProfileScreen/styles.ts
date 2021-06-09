@@ -11,9 +11,10 @@ const styles = StyleSheet.create({
     height: 175,
     resizeMode: "contain",
   },
+
   userContainer: {
     flexDirection: 'row',
-    justifyContent: 'flex-start',
+    justifyContent: 'space-between',
     alignItems: 'center',
     height: 50,
     marginVertical: 10,
@@ -25,11 +26,15 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderRadius: 50,
   },
+  left: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
   name: {
     fontWeight: 'bold',
+    marginBottom: 5,
   },
   email: {
-    marginVertical: 5,
   },
   value: {
     fontSize: 18,

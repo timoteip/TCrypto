@@ -1,20 +1,15 @@
-/**
- * Learn more about createBottomTabNavigator:
- * https://reactnavigation.org/docs/bottom-tab-navigator
- */
-
-import { Ionicons, Entypo, AntDesign, FontAwesome5, FontAwesome, MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome, Entypo, AntDesign, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import * as React from 'react';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import { BottomTabParamList} from '../../types';
-import HomeScreen from '../screens/HomeScreen';
-import PortofolioScreen from '../screens/PortofolioScreen';
-import MarketScreen from '../screens/MarketScreen';
-import RankingsScreen from '../screens/RankingsScreen';
-import ProfileScreen from '../screens/ProfileScreen';
+import { BottomTabParamList } from '../../types';
+import HomeScreen from "../screens/HomeScreen";
+import PortfolioScreen from "../screens/PortfolioScreen";
+import MarketScreen from "../screens/MarketScreen";
+import RankingsScreen from "../screens/RankingsScreen";
+import ProfileScreen from "../screens/ProfileScreen";
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -33,8 +28,8 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Portofolio"
-        component={PortofolioScreen}
+        name="Portfolio"
+        component={PortfolioScreen}
         options={{
           tabBarIcon: ({ color }) => <AntDesign name="piechart" size={30} color={color} />,
         }}
@@ -57,7 +52,7 @@ export default function BottomTabNavigator() {
         name="Profile"
         component={ProfileScreen}
         options={{
-          tabBarIcon: ({ color }) => <FontAwesome name="user" size={30}color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome name="user" size={30} color={color} />,
         }}
       />
     </BottomTab.Navigator>
@@ -69,3 +64,4 @@ export default function BottomTabNavigator() {
 function TabBarIcon(props: { name: React.ComponentProps<typeof Ionicons>['name']; color: string }) {
   return <Ionicons size={30} style={{ marginBottom: -3 }} {...props} />;
 }
+

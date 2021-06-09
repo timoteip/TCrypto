@@ -11,10 +11,19 @@ const styles = StyleSheet.create({
     height: 175,
     resizeMode: "contain",
   },
+  balanceContainer: {
+    marginVertical: 20,
+    width: '100%',
+  },
   label: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: '#777777'
   },
+  balance: {
+    fontSize: 36,
+    fontWeight: 'bold',
+  }
 });
 
 export default styles;
