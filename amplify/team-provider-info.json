@@ -10,6 +10,17 @@
       "StackName": "amplify-tcrypto-dev-204953",
       "StackId": "arn:aws:cloudformation:us-east-2:639865893271:stack/amplify-tcrypto-dev-204953/1c86d260-c94b-11eb-a6b1-061bc70f2c84",
       "AmplifyAppId": "d3clv353t4grsq"
+    },
+    "categories": {
+      "auth": {
+        "tcryptob1eef6ce": {}
+      },
+      "function": {
+        "tcryptob1eef6cePostConfirmation": {
+          "deploymentBucketName": "amplify-tcrypto-dev-204953-deployment",
+          "s3Key": "amplify-builds/tcryptob1eef6cePostConfirmation-57795a4c546f4f513978-build.zip"
+        }
+      }
     }
   }
 }

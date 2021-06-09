@@ -7,7 +7,7 @@ const HomeScreen = () => {
   return (
     <View style={styles.root}>
       <Image style={styles.image} source={image} />
-      <Text style={styles.header1}>Welcome to VCrypto</Text>
+      <Text style={styles.header1}>Welcome to TCrypto</Text>
       <Text style={styles.header2}>Invest your virtual $100.000 and compete with others</Text>
     </View>
   );
