@@ -18,7 +18,7 @@
       "function": {
         "tcryptob1eef6cePostConfirmation": {
           "deploymentBucketName": "amplify-tcrypto-dev-204953-deployment",
-          "s3Key": "amplify-builds/tcryptob1eef6cePostConfirmation-57795a4c546f4f513978-build.zip"
+          "s3Key": "amplify-builds/tcryptob1eef6cePostConfirmation-764d4f76464571456254-build.zip"
         }
       }
     }
